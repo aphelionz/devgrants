@@ -22,7 +22,7 @@ In an effort to respond to our community's desire for reliable pinning, we recen
 simplified the pinning and storage of OrbitDB database snapshots on Filecoin, via Textile's
 [Powergate](https://github.com/textileio/powergate).
 
-To further improve the user experience of this process, we would like incorporate the
+To further improve the user experience of this process, we would like to incorporate the
 [OrbitDB Control Center](https://github.com/orbitdb/orbit-db-control-center) UI. Since OrbitDB
 itself is isomorphic between the browser and node.js, as well as js-ipfs and go-ipfs, this
 interface would work with all of the above, and end up being a high-visibility tool for both the
@@ -35,18 +35,18 @@ intuitive and simple for users and developers of OrbitDB.
 
 ## Value
 
-Our [previous grant](https://github.com/filecoin-project/devgrants/pull/147) posited that our
-Powergate integration provide visibility and user feedback to Filecoin, and thus transitvely
+Our [previous grant](https://github.com/filecoin-project/devgrants/pull/147) stated that our
+Powergate integration would provide visibility and user feedback to Filecoin, and thus transitively
 improve the ecosystem. The rationale for this claim was that OrbitDB itself had a similar effect
 on the IPFS ecosystem.
 
 It may be too early to tell, but by participating in the APOLLO event in a mentoring capacity,
-the team was able to get immediate feedback and already have users trying out
-[`orbit-db-powergate-io`](https://github.com/orbitdb/orbit-db-powergate-io) and giving feedback.
+the team was able to get immediate feedback with users already trying out
+[`orbit-db-powergate-io`](https://github.com/orbitdb/orbit-db-powergate-io).
 
-Additionally, this project has high probability for promotional and PR opportunities. Textile has
+Additionally, this project has high capacity for promotional and PR opportunities. Textile has
 agreed to host the OrbitDB Control Center UI along with the hosted Powergate instance, providing a
-stable home for it and potential for a trifecta of promotional opportunities between our three
+stable location and a potential for a trifecta of promotional opportunities between our three
 organizations.
 
 ### Risks, past and present
@@ -58,28 +58,28 @@ adds a new risk category based on knowledge gained from the completed work.
 > Likelihood: Low | Impact: Low
 
 During the previous milestones we were concerned that things would change quickly and often,
-hampering our ability to deliver. However through the diligence of the Filecoin engineers, as well
+hampering our ability to deliver. However, through the diligence of the Filecoin engineers, as well
 as the community's efforts during the Space Race, things have gone remarkably smoothly.
 
 One big component to this is of course the abstraction provided by Powergate itself, which makes
 connecting to Filcoin and interacting with the chain easy by way of its API endpoints.
 
-This still remains a risk but has been mitigated thus far and has been downgraded to a "Low"
-likelihood.
+This still remains a risk but has been mitigated thus far; it has therefore been downgraded to a
+"Low" likelihood.
 
 #### Minimum sector size and deal lengths introduce complexities.
 > Likelihood: Near Certain | Impact: High
 
 As of this writing, Filecoin's mainnet is aiming for a 32GB minimum sector size and a six month
 deal length. This introduces issues with OrbitDB, which is made of textual / small binary data
-that will have troubles filling up a 32GB sector. However, in aggregate an `orbit-db-powergate-io`
-node could make bulk requests, storing its known snapshots at once, for all users.
+that will have trouble filling up a 32GB sector. However, an `orbit-db-powergate-io` node could
+make aggregate bulk requests, storing its known snapshots at once, for all users.
 
 ### Benefits
 
 To the end user, this should be a seamless process of ensuring their database snapshots are
 archived in Filecoin. Also, by way of using Powergate, the snapshot CIDs are persisted in the IPFS
-node's "hot" storage before they are archived to Filecoin, so the pinned data are instantly
+node's "hot" storage before they are archived to Filecoin, so the pinned data is instantly
 available.
 
 The main benefit of all of this is _abstraction_. OrbitDB users will be one step closer to a "set
@@ -125,8 +125,8 @@ incorporate [filsnap](https://github.com/NodeFactoryIo/filsnap) into the UI as w
 
 Equilibrium strives to follow all best practices in software software engineering, including
 fast feedback loops via continuous integration (CI) and continuous deployment. As such, this
-milestone will not _directly_ follow Milestones 1 and 2. Instead the work here will be be woven
-in to Milestones 1 and 2, with a period of final checks and validations that follow.
+milestone will not _directly_ follow Milestones 1 and 2. Instead, the work here will be woven
+into Milestones 1 and 2, with a period of final checks and validations that follow.
 
 #### Deliverables
 
@@ -158,7 +158,7 @@ different levels of difficulty, and providing mentoring.
 
 # Team
 
-The team is comprised of the following [Equilibrium](https://equilibrium.co) team members.
+The team is composed of the following [Equilibrium](https://equilibrium.co) team members.
 
 We believe this team is uniquely qualified to complete this task, both the implementation
 and communicating with the community in terms of the provided reference implementation and best
